@@ -61,6 +61,9 @@ define('DB_CHARSET', getenv('WP_DB_CHARSET'));
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
+//** Allows direct upload instead of requiring FTP connection */
+define('FS_METHOD','direct');
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
