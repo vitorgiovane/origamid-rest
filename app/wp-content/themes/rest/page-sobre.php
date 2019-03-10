@@ -6,7 +6,7 @@
 	<h2 class="subtitulo">Sobre</h2>
 
 	<div class="grid-8">
-		<img src="img/rest-fachada.jpg" alt="Fachada do Rest">
+		<img src="<?= get_template_directory_uri(); ?>/img/rest-fachada.jpg" alt="Fachada do Rest">
 	</div>
 
 	<div class="grid-8">
