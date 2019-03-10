@@ -13,7 +13,7 @@
   <header>
     <nav>
       <ul>
-        <li class="current_page_item"><a href="<?php get_site_url(); ?>">Menu</a></li>
+        <li class="current_page_item"><a href="/">Menu</a></li>
         <li><a href="<?php get_site_url(); ?>/sobre">Sobre</a></li>
         <li><a href="<?php get_site_url(); ?>/contato">Contato</a></li>
       </ul>
