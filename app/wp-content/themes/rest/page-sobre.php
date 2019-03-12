@@ -8,10 +8,13 @@
 	<h2 class="subtitulo"><?php the_title(); ?></h2>
 
 	<div class="grid-8">
-		<img src="<?= get_template_directory_uri(); ?>/img/rest-fachada.jpg" alt="Fachada do Rest">
+		<img src="<?php the_field('foto_restaurante'); ?>" alt="<?php the_field('descricao_foto_restaurante'); ?>">
 	</div>
 
 	<div class="grid-8">
+		<h2><?php the_field('titulo_da_historia'); ?></h2>
+		<?php the_field('texto_da_historia'); ?>
+
 		<?php the_content(); ?>
 	</div>
 </section>
