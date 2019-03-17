@@ -12,13 +12,29 @@
 	</div>
 
 	<div class="grid-1-3 contato-item">
-		<h2>Dados</h2>
-		<p>21 2422-9999</p>
-		<p>contato@rest.com</p>
-		<p>facebook.com/rest/</p>
+		<h2><?php the_field('titulo_contato'); ?></h2>
+		<p><?php the_field('telefone', 14) ?></p>
+		<p><?php the_field('email'); ?></p>
+		<p><?php the_field('facebook'); ?></p>
 	</div>
 	<div class="grid-1-3 contato-item">
-		<h2>Horários</h2>
+		<h2><?php the_field('titulo_horarios'); ?></h2>
+		<p><?php the_field('horario1'); ?></p>
+		<p><?php the_field('horario2'); ?></p>
+		<p><?php the_field('horario3'); ?></p>
+	</div>
+	<div class="grid-1-3 contato-item">
+		<h2><?php the_field('titulo_endereco'); ?></h2>
+		<p><?php the_field('rua') ?>, <?php the_field('numero') ?> </p>
+		<p><?php the_field('bairro') ?> - <?php the_field('cidade') ?> </p>
+		<p><?php the_field('estado') ?> - <?php the_field('pais') ?> </p>
+	</div>
+</section>
+
+
+<!-- 
+<div class="grid-1-3 contato-item">
+		<h2><?php the_field('horarios'); ?></h2>
 		<p>Segunda à Sexta: 10 às 23</p>
 		<p>Sábado: 14 às 23</p>
 		<p>Domingo: 14 às 22</p>
@@ -28,8 +44,7 @@
 		<p>Rua Marechal, 29</p>
 		<p>Copacabana - Rio de Janeiro</p>
 		<p>Brasil - Terra - Via Láctea</p>
-	</div>
-</section>
+	</div> -->
 
 <?php endwhile; else: endif; ?>
 <?php get_footer(); ?>
