@@ -2,6 +2,7 @@
 
 <?php get_header(); ?>
 
+
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
 
 <section class="container sobre">
@@ -15,7 +16,11 @@
 		<h2><?php the_field('titulo_da_historia'); ?></h2>
 		<?php the_field('texto_da_historia'); ?>
 
-		<?php the_content(); ?>
+		<h2><?php the_field('titulo_da_visao') ?></h2>
+		<?php the_field('texto_da_visao'); ?>
+
+		<h2><?php the_field('titulo_dos_valores') ?></h2>
+		<?php the_field('texto_dos_valores'); ?>
 	</div>
 </section>
 
