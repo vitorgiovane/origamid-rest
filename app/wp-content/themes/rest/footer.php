@@ -7,7 +7,7 @@
     </ul>
   </nav>
 
-  <p>Rest © 2019. Alguns direitos reservados.</p>
+  <p><?php echo bloginfo('name'); ?> © <?php echo date('Y') ?>. Alguns direitos reservados.</p>
 </footer>
 
 <?php wp_footer(); ?>
