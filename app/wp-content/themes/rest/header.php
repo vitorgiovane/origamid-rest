@@ -21,7 +21,7 @@
 
     <h1><img src="<?= get_template_directory_uri(); ?>/img/rest.png" alt="Rest"></h1>
 
-    <p>Rua Marechal 29 – Copacabana – Rj</p>
-    <p class="telefone">2422-9201</p>
+    <p><?php the_field('address_header', 14) ?></p>
+    <p class="telefone"><?php the_field('phone_header', 14) ?></p>
     <?php wp_head(); ?>
   </header>
